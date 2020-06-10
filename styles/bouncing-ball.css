@@ -1,0 +1,35 @@
+body{
+    background:#fff;
+}
+.ball{
+    height: 50px;
+    width: 50px;
+    margin: 40vh 40vw ;
+    padding:0;
+    background:#222222 ; 
+    position: relative;
+    border-radius: 50%;
+    animation: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes bounce{
+    0%{
+        top:0;
+    }
+    25%{
+        top:10vh
+    }
+    50%{
+        top:40vh;
+        box-shadow: 3px red;
+    }
+    75%{
+        top:10vh;
+    }
+    100%{
+        top:0;
+    }
+}
